@@ -87,7 +87,7 @@ class FileStorage implements Persistence {
             outFile.close();
             System.out.println("Document saved to document.txt");
         } catch (IOException e) {
-            System.out.println("Error: Unable to open file for writing.");
+            System.out.println("Error: Unable to open file for writing on a code .");
         }
     }
 }
@@ -131,6 +131,7 @@ class DocumentEditor {
 
     public String renderDocument() {
         if (renderedDocument.isEmpty()) {
+
             renderedDocument = document.render();
         }
         return renderedDocument;
